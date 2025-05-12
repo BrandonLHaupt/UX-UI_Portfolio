@@ -1,0 +1,194 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Comfortaa", serif;
+}
+
+body {
+  background-color: #e3a3a3;
+  color: #fff;
+}
+
+/* ----------- Navbar ---------- */
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 40px;
+  background-color: #e3a3a3;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+header nav ul li :hover {
+  background-color: #ffdada;
+  border-radius: 30px;
+  color: black;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+/* ------------ About hero ------------ */
+
+.AboutMe-hero {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.AboutMe-hero h1 {
+  font-size: 5rem;
+  font-weight: bold;
+}
+
+.AboutMe-hero p {
+  width: 50%;
+  font-size: 24px;
+  text-align: center;
+}
+
+/* ------------ Resume ------------ */
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 10rem 8rem;
+}
+
+.inner-container {
+  display: grid;
+  grid-auto-rows: min-content;
+  grid-template-columns: repeat(2, minmax(40px, 1fr));
+  height: -moz-min-content;
+  height: min-content;
+  gap: 20px;
+  width: 100%;
+}
+
+.experience {
+  display: flex;
+  flex-direction: column;
+  background-color: #ffdada;
+  grid-column: auto/span 2;
+  border-radius: 30px;
+  width: 100%;
+  padding: 40px;
+  color: black;
+}
+
+.job {
+  padding-top: 1rem;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  text-decoration-line: underline;
+  padding-bottom: 0.5rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+.education,
+.software {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  background-color: #ffdada;
+  border-radius: 30px;
+  width: 100%;
+  padding: 40px;
+  color: black;
+}
+
+.right-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-around;
+  background-color: #ffdada;
+  border-radius: 30px;
+  width: 100%;
+  padding: 40px;
+  color: black;
+}
+
+@media (max-width: 1100px) {
+  .inner-container {
+    display: flex;
+    flex-direction: column;
+    height: -moz-min-content;
+    height: min-content;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .skills {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    background-color: #ffdada;
+    border-radius: 30px;
+    width: 100%;
+    padding: 40px;
+    color: black;
+  }
+}
+
+@media (max-width: 600px) {
+  .AboutMe-hero h1 {
+    font-size: 3rem;
+  }
+
+  .AboutMe-hero p {
+    width: 90%;
+    font-size: 20px;
+    text-align: center;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    font-weight: 800;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  .container {
+    margin: 6rem 2rem;
+  }
+}
