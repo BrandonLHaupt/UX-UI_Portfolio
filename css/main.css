@@ -8,27 +8,26 @@
 }
 
 body {
-  background-image: url("../img/WebsiteBg.png") no-repeat;
+  background: url('../img/WebsiteBg.png')  #272727;
   width: 100%;
   min-height: 100%;
+  background-color: #272727;
 }
 
-.bgimg {
-  width: 100%;
-  min-height: 100%;
-  object-fit: cover;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: -1;
-  overflow: hidden;
-}
 
 /* ---------------- Nav Section ---------------- */
 header {
   display: flex;
-  justify-content: flex-end;
   padding: 40px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 
 nav > ul {
@@ -51,6 +50,10 @@ header nav ul li a {
   text-decoration: none;
   color: white;
   padding: 10px;
+}
+
+.logo {
+  width: 130px;
 }
 
 /* ---------------- Hero Section ---------------- */
@@ -96,15 +99,21 @@ header nav ul li a {
 }
 
 /* ---------------- Project Section ---------------- */
-.projects {
-  height: 100vh;
-  width: 100%;
+.projectsContainer {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  align-content: center;
+}
+
+.projects {
+  height: 100vh;
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
   gap: 2rem;
-  margin: 2rem;
 }
 
 .project {
@@ -112,7 +121,6 @@ header nav ul li a {
   display: flex;
   width: 100%;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
   gap: 80px;
 }
@@ -132,10 +140,23 @@ header nav ul li a {
   font-size: 70px;
   color: white;
   font-weight: 700;
+  padding-bottom: 20px;
 }
 
-.project3 img {
-  object-fit: cover;
+.right button {
+  width: 140px;
+  height: 40px;
+  border-radius: 4px;
+  text-decoration: none;
+  border: none;
+  background-color: #efc356;
+  font-size: 1rem;
+  font-weight: 800;
+}
+
+.right button:hover {
+  cursor: pointer;
+  background-color: #f8d680;
 }
 
 /* ---------------- Media Query ---------------- */
@@ -168,5 +189,11 @@ header nav ul li a {
 
   .text-container h3 {
     font-size: 1rem;
+  }
+
+  .project {
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 100px;
   }
 }
