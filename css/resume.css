@@ -165,7 +165,6 @@ ul li {
     display: flex;
     flex-direction: column;
     gap: 2rem;
-    background-color: #f39b48;
     border-radius: 30px;
     width: 100%;
     padding: 40px;
