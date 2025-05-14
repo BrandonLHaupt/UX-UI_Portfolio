@@ -1,0 +1,165 @@
+body {
+  color: white;
+}
+
+/* ------------------------- HERO -------------------------- */
+.petwell-hero img,
+.sushiAi-hero img,
+.campery-hero img {
+  width: 100%;
+  height: 628px;
+  object-fit: contain;
+}
+
+.petwell-hero {
+  background-color: #286675;
+}
+
+.sushiAi-hero {
+  background-color: #fa986a;
+}
+
+.campery-hero {
+  background: #7a7dc5;
+}
+
+.overviewContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin: 60px;
+  gap: 80px;
+}
+
+.overviewContainer img {
+  height: 700px;
+}
+
+.container-right {
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  color: white;
+}
+
+.container-right h2 {
+  font-size: 1.5rem;
+  font-weight: 300;
+  color: #b6b6b6;
+}
+
+.overview,
+.roles,
+.goals {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ------------------------- Info -------------------------- */
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  margin: 24px;
+}
+
+.infoContainer h3 {
+  font-size: 2rem;
+}
+
+.background,
+.personas,
+.userFlow,
+.designSystem,
+.takeAway {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  padding-bottom: 2rem;
+}
+
+.personaContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 24px;
+}
+
+.personas img {
+  object-fit: contain;
+  height: 500px;
+}
+
+.userFlow img,
+.designSystem img {
+  object-fit: contain;
+}
+
+/* ------------------------- Responsive -------------------------- */
+@media (max-width: 1600px) {
+  .overviewContainer img {
+    height: 500px;
+  }
+
+  .personas img {
+    object-fit: contain;
+    width: 70%;
+  }
+}
+
+@media (max-width: 1350px) {
+  .overviewContainer {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .container-right {
+    width: 80%;
+  }
+
+  .personaContainer {
+    flex-direction: column-reverse;
+  }
+
+  .personas img {
+    width: 100%;
+  }
+}
+
+@media (max-width: 970px) {
+  .hero img {
+    opacity: 0;
+    position: absolute;
+  }
+
+  .text-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .text-container h1 {
+    font-size: 3rem;
+  }
+
+  .text-container h2 {
+    font-size: 2rem;
+  }
+
+  .text-container h3 {
+    font-size: 1rem;
+  }
+
+  .project {
+    flex-direction: column;
+    gap: 16px;
+    padding-bottom: 100px;
+  }
+}

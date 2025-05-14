@@ -1,0 +1,40 @@
+/* ---------------- Nav Section ---------------- */
+header {
+  display: flex;
+  padding: 20px;
+  width: 100%;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+nav > ul {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+}
+
+nav > ul > li {
+  list-style-type: none;
+}
+
+header nav ul li :hover {
+  background-color: #efc356;
+  border-radius: 30px;
+  color: black;
+}
+
+header nav ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 10px;
+}
+
+.logo {
+  width: 130px;
+}
